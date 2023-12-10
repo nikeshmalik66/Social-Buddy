@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(212, 212, 255), deep plum);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #9c88ff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#logo {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+
+#links a {
+    font-weight: bold;
+    margin-left: 0.7rem;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 0.8rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+#links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    margin-top: 50px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: center;
+    width: 85%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 30px;
+    width: 100%;
+    border: 1px solid #9c88ffcb;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #9c88ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: deep #9c88ff;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: smaller;
+    margin-top: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}

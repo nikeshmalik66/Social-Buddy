@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SocialBuddy</title>
+    <link rel="stylesheet" href="static/css/log-reg.css">
+    <!-- Including Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div id="logo"><a href="/">SocialBuddy</a></div>
+        <div id="links">
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post" id="loginForm">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 OneWeb | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p><a href="mailto:oneweb@onew3b.com">oneweb@onew3b.com</a></p>
+    </footer>
+</body>
+</html>

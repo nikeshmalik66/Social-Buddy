@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Sarcasm Detection App | SocialBuddy</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo"><a href="/socialbuddy">SocialBuddy</a></div>
+        <div id="links">
+            <a href="/">Emotion Predictor</a>
+            <a href="/hatespeech">Hatespeech Predictor</a>
+            <a href="/sarcasm">Sarcasm Predictor</a>
+            <a href="/slang_new">Slang Predictor</a>
+        </div>
+    </nav>
+
+    <div class="chat-interface">
+        <div class="chat-history" id="chatHistory"></div>
+        
+        <div class="heading" id="typed-text">
+            Sarcasm Detection App
+        </div>
+            
+        </nav>
+
+        <div class="examples">
+            <p>Example Usage:</p>
+            <button class="ex-button" onclick="populateInput('I am happy today.')">I am happy today.</button>
+            <button class="ex-button" onclick="populateInput('I feel so sad.')">I feel so sad.</button>
+        </div>
+        <br>
+        <div class="instructions">
+            <p>Instructions:</p>
+            <ul>
+                <li>Type a sentence to classify Sarcasm.</li>
+                <li>Sarcasm need depends on context, tone and other factors</li>
+                <li>Click on examples to auto-fill input.</li>
+                <!-- Add more instructions if needed -->
+            </ul>
+        </div>
+    </div>
+    <div class="warning">
+        Note: This AI tool, while powerful, may occasionally produce unreliable results.
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your sentence here..." onkeyup="updateWordCount()">
+        <span class="word-count" id="wordCount">0 words</span>
+        <button id="sendButton">Send</button>
+    </div>
+
+  
+
+    <script src="static/js/scripts.js"></script>
+</body>
+
+</html>

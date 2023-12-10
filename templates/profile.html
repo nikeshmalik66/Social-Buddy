@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | SocialBuddy</title>
+    <link rel="stylesheet" href="static/css/log-reg.css">
+</head>
+<body>
+    <nav>
+        <div id="logo"><a href="/socialbuddy">SocialBuddy</a></div>
+        <div id="links">
+            <a href="/emotion">Emotion Predictor</a>
+            <a href="/hatespeech">Hatespeech Predictor</a>
+            <a href="/sarcasm">Sarcasm Predictor</a>
+            <a href="/slang_new">Slang Predictor</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>User Profile</h2>
+        <hr>
+        <br>
+        <p style="font-size: large;"><strong>Username:</strong> {{ user.username }}</p>
+        <p style="font-size: large;"><strong>E-Mail:</strong> {{ user.email }}</p>
+        <br>
+        <button style="font-size: medium;" ><a href="/logout">Logout</a></button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 OneWeb | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p><a href="mailto:oneweb@onew3b.com">oneweb@onew3b.com</a></p>
+    </footer>
+
+</body>
+</html>
